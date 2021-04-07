@@ -1,0 +1,23 @@
+---
+title: "reshaping data"
+author: "Katherine Piatti"
+date: "4/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## INTRODUCTION
+
+this is the rmd i'm creating as i'm going through the clean it up # 5 tutorial from ryouwithme
+
+here is the [link to website](https://rladiessydney.org/courses/ryouwithme/02-cleanitup-5/)
+
+reshaping data from wide to long and long to wide is sometimes necessary. for most projects to work with r functions your data needs to be in long format. 
+
+p.s. i'm also using this to continue practicing and learning git/github
+
+
+## Wide vs. Long Format
+
