@@ -9,22 +9,22 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+################## ESQUISSE ADD-IN ###############
+This add-in allows you to build ggplot2 plots using a drag and drop GUI, and then export or copy/paste the code into your script or markdown file. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is a test drive using the cleanbeaches data
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r}
+cleanbeaches <- read.csv(here("Data", "cleanbeaches.csv"))
 
-```{r cars}
-summary(cars)
+#launch the esquisee interface
+esquisse::esquisser(cleanbeaches)
+
+
+ggplot(cleanbeaches) +
+ aes(x = site, y = beachbugs) +
+ geom_violin(adjust = 1L, scale = "area", fill = "#bd3786") +
+ labs(x = "Beach Site", y = "Beachbug levels", title = "Built Using Esquisser Add-in Drag & Drop") +
+ ggthemes::theme_base()
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
