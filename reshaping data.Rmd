@@ -42,3 +42,11 @@ beaches_long <- wide_data %>%
                `Bondi.Beach`: `Tamarama.Beach`)
 ```
 
+
+long to wide example (tutorial author says she uses this much less often)
+```{r}
+beaches_wide <- beaches_long %>% 
+  pivot_wider(names_from = site,
+              values_from = buglevels)
+```
+
