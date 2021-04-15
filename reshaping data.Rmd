@@ -4,10 +4,6 @@ author: "Katherine Piatti"
 date: "4/7/2021"
 output: html_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## INTRODUCTION
 
 this is the rmd i'm creating as i'm going through the clean it up # 5 tutorial from ryouwithme
